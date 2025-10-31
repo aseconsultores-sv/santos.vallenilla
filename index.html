@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ASECONSULTORES | Santos Vallenilla</title>
   <link rel="icon" href="aseconsultores_sv_logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="
-https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
       --primary: #4B0082;
@@ -34,6 +33,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
     }
 
     p {
+      text-align: center;
       hyphens: none;
     }
 
@@ -56,11 +56,12 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
       color: var(--white);
     }
 
-    /* Modificación CSS para que el logo (imagen y texto) se muestre en línea */
+    /* LOGO: imagen + texto siempre visible, texto debajo */
     .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
 
     .logo img {
@@ -69,27 +70,10 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
     }
 
     .logo span {
-      font-weight: 500;
-      font-size: 1rem;
+      font-weight: 700;
+      font-size: 0.9rem;
       color: var(--white);
-      /* Asegura que el texto no se oculte cuando la imagen falle */
-      display: inline;
-    }
-
-    /* Se añade posición relativa para que el botón de menú sea absoluto dentro */
-    header {
-        position: relative;
-    }
-
-    /* Estilo del botón de menú hamburguesa (solo visible en móvil) */
-    #menu-toggle {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: none; /* Ocultar por defecto */
-        z-index: 101;
+      text-align: center;
     }
 
     nav ul {
@@ -116,7 +100,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
     }
 
     .hero h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       color: var(--primary);
     }
@@ -286,7 +270,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
     }
 
     footer {
-      text-align: center; 
+      text-align: center !important;
       padding: 1.5rem;
       background: var(--text-dark);
       color: white;
@@ -294,31 +278,26 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
     }
 
     @media (max-width: 768px) {
-        /* Mostrar el botón de menú hamburguesa */
-        #menu-toggle {
-            display: block; 
-            position: absolute;
-            right: 5%; 
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
       nav ul {
         flex-direction: column;
         gap: 0.8rem;
         position: absolute;
-        top: 84px; 
+        top: 70px;
         left: 0;
         width: 100%;
         background: var(--primary);
         padding: 1rem 0;
         box-shadow: 0 4px 8px var(--shadow);
         display: none;
-        text-align: center; 
       }
       nav ul.show {
         display: flex;
       }
+
+      .logo span {
+        font-size: 1.2rem; /* ligeramente más pequeño en móvil */
+      }
+
       .hero h1 {
         font-size: 2rem;
       }
@@ -329,7 +308,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
 
   <header>
     <div class="logo">
-      <img src="santos.vallenilla.@administrador.santosrvh_logo.png" alt="Logo Santos Vallenilla" onerror="this.style.display='none';" />
+      <img src="santos.vallenilla.@administrador.santosrvh_logo.png" alt="Logo Santos Vallenilla" />
       <span>ASESORES Y CONSULTORES SV</span>
     </div>
     <nav>
@@ -337,21 +316,18 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <button id="menu-toggle" aria-label="Abrir menú de navegación">
-          <i class="fas fa-bars"></i>
-      </button>
     </nav>
   </header>
 
   <section class="hero">
     <div class="container">
       <h1>SOBRE NOSOTROS</h1>
-      <p>Somos un grupo de profesionales expertos en diferentes áreas que unimos esfuerzos para que las empresas enfrenten a los retos y aprovechen sus oportunidades. Las ganas y la dedicación de personas no capacitadas son insuficientes para que un negocio prospere. La realidad es que muchos inversionistas creen que puede mantener un negocio, y ese es el principal motivo por el cual muchas empresas cambian el nombre o desaparecen tan rápido como aparecen. Todos somos testigos de esto</p>
+      <p>Somos un grupo de profesionales expertos en diferentes áreas que colaboramos para que las empresas enfrente a los retos y aproveche las oportunidades que tiene se presenten y que quizás desconozca. El esfuerzo y la dedicación de personas no capacitadas no son suficientes para que un negocio próspere. La realidad es que muchos creen que puede mantener un negocio y ese es el principal motivo por el cual muchas empresas se cambian el nombre o desaparecen tan rápido como aparecen. Todos somos testigos de esto.</p>
       <br>
-      <p>Para que un negocio sea própero se deben realizar procesos y aplicar estrategias que sólo las pueden llevar a cabo profesionales experimentados quienes harán lo que deben hacer para que los socios tomen las decisiones más acertadas para el negocio.</p>
+      <p>Para que un negocio sea própero se deben realizar procesos y aplicar estrategias que sólo las pueden llevar a cabo profesionales experimentados quienes harán lo que deben hacer para que los socios de un negocio tomen decisiones acertadas.</p>
       <br>
       <p>Nuestra misión es simple: aportar dedicación y experiencia a traves de asesoría, consultorías y externalización de proyectos de negocios (Business Process Outsourcing) para su negocio se consolide y sea cada vez más retable. Nos integramos como su Partner Estratégico, asegurando que cada actividad se ejecute para aumentar la generación de valor.</p>  
-      <a href="https://wa.me/584162499925    " class="btn" style="width: auto; margin-top: 1.5rem; display: inline-block;">
+      <a href="https://wa.me/584162499925" class="btn" style="width: auto; margin-top: 1.5rem; display: inline-block;">
         <i class="fab fa-whatsapp"></i> Consúltenos por WhatsApp
       </a>
     </div>
@@ -432,23 +408,23 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
           </div>
           <div class="contact-item">
             <i class="fab fa-instagram"></i>
-            <a href="https://instagram.com/administrador.santosrvh    " target="_blank">@administrador.santosrvh</a>
+            <a href="https://instagram.com/administrador.santosrvh" target="_blank">@administrador.santosrvh</a>
           </div>
           <div class="contact-item">
             <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/584162499925    " target="_blank">+58 416-2499925</a>
+            <a href="https://wa.me/584162499925" target="_blank">+58 416-2499925</a>
           </div>
           <div class="qr-code">
             <img src="santos_vallenilla.@administrador.santosrvh_qr.instagram.png" alt="Escanea para contactar por WhatsApp">
           </div>
-          <a href="https://wa.me/584162499925    " class="btn">
+          <a href="https://wa.me/584162499925" class="btn">
             <i class="fab fa-whatsapp"></i> Consúltenos por WhatsApp
           </a>
         </div>
 
         <div class="contact-form">
           <h3>Haga su consulta aquí</h3>
-          <form id="cotizacionForm" action="https://getform.io/f/apjzkeza    " method="POST" enctype="multipart/form-data">
+          <form id="cotizacionForm" action="https://getform.io/f/apjzkeza" method="POST" enctype="multipart/form-data">
             <div class="form-group">
               <label for="nombre">Nombre</label>
               <input type="text" id="nombre" name="nombre" required>
@@ -476,27 +452,5 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css    " /
     <p>Llegar es fácil, lo difícil es mantenerse</p>
     <p>&copy;Sitio en construcción. Creado por Santos Vallenilla. Todos los derechos reservados. Caracas, Venezuela. Octubre 2025</p>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.getElementById('menu-toggle');
-      const navMenu = document.getElementById('nav-menu');
-
-      if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', function() {
-          navMenu.classList.toggle('show');
-        });
-
-        // Ocultar el menú al hacer clic en un enlace (para móviles)
-        navMenu.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-              navMenu.classList.remove('show');
-            }
-          });
-        });
-      }
-    });
-  </script>
 </body>
 </html>
