@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ASECONSULTORES | Santos Vallenilla</title>
-  <link rel="icon" href="aseconsultores_sv_logo.ico" type="image/x-icon" />
+  <title>Santos Vallenilla | ASECONSULTORES SV</title>
+  <link rel="icon" href="santos_vallenilla_icon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
-      --primary: #011e31;
+      --primary: #6a4c93;
       --primary-light: #8a6dbd;
       --bg-body: #faf9fd;
       --bg-card: #ffffff;
@@ -32,8 +32,9 @@
       text-align: justify;
     }
 
+    /* ✅ Texto justificado en todos los párrafos */
     p {
-      text-align: center;
+      text-align: justify !important;
       hyphens: none;
     }
 
@@ -56,24 +57,15 @@
       color: var(--white);
     }
 
-    /* LOGO: imagen + texto siempre visible, texto debajo */
-    .logo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-
     .logo img {
-      height: 60px;
+      height: 50px;
       object-fit: contain;
     }
 
     .logo span {
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 1.4rem;
       color: var(--white);
-      text-align: center;
     }
 
     nav ul {
@@ -110,6 +102,7 @@
       max-width: 700px;
       margin: 0 auto;
       color: var(--text-light);
+      /* Sobrescribe justify para mantener centrado en hero */
       text-align: justify;
     }
 
@@ -159,6 +152,7 @@
       color: var(--text-dark);
     }
 
+    /* ✅ Mantener centrado el texto dentro de las tarjetas */
     .service-card p {
       text-align: center;
     }
@@ -195,7 +189,7 @@
     .contact-item i {
       width: 36px;
       height: 36px;
-      background: #011E31);
+      background: #011E31; /* <--- COLOR ACTUALIZADO (#011E31) */
       color: white;
       border-radius: 50%;
       display: flex;
@@ -274,7 +268,7 @@
       padding: 1.5rem;
       background: var(--text-dark);
       color: white;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
@@ -293,11 +287,6 @@
       nav ul.show {
         display: flex;
       }
-
-      .logo span {
-        font-size: 1.2rem; /* ligeramente más pequeño en móvil */
-      }
-
       .hero h1 {
         font-size: 2rem;
       }
@@ -308,8 +297,7 @@
 
   <header>
     <div class="logo">
-      <img src="santos.vallenilla.@administrador.santosrvh_logo.png" alt="Logo Santos Vallenilla" />
-      <span>ASESORES Y CONSULTORES SV</span>
+      <img src="santos.vallenilla.@administrador.santosrvh_logo.png" alt="Logo Santos Vallenilla" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>Santos Vallenilla</span>'" />
     </div>
     <nav>
       <ul id="nav-menu">
@@ -321,14 +309,14 @@
 
   <section class="hero">
     <div class="container">
-      <h1>SOBRE NOSOTROS</h1>
-      <p>Somos un grupo de profesionales expertos en diferentes áreas que colaboramos para que las empresas enfrente a los retos y aproveche las oportunidades que tiene se presenten y que quizás desconozca. El esfuerzo y la dedicación de personas no capacitadas no son suficientes para que un negocio próspere. La realidad es que muchos creen que puede mantener un negocio y ese es el principal motivo por el cual muchas empresas se cambian el nombre o desaparecen tan rápido como aparecen. Todos somos testigos de esto.</p>
-      <br>
-      <p>Para que un negocio sea própero se deben realizar procesos y aplicar estrategias que sólo las pueden llevar a cabo profesionales experimentados quienes harán lo que deben hacer para que los socios de un negocio tomen decisiones acertadas.</p>
-      <br>
-      <p>Nuestra misión es simple: aportar dedicación y experiencia a traves de asesoría, consultorías y externalización de proyectos de negocios (Business Process Outsourcing) para su negocio se consolide y sea cada vez más retable. Nos integramos como su Partner Estratégico, asegurando que cada actividad se ejecute para aumentar la generación de valor.</p>  
-      <a href="https://wa.me/584162499925" class="btn" style="width: auto; margin-top: 1.5rem; display: inline-block;">
-        <i class="fab fa-whatsapp"></i> Consúltenos por WhatsApp
+      <h1>ASESORES Y CONSULTORES SV</h1>
+  <p>El esfuerzo y la dedicación no son suficiente para que un negocio próspere. "Saber sacar cuentas" tampoco lo es. La realidad es que cualquiera cree que puede mantener un negocio y ese es el principal motivo por el cual muchas empresas se cambian el nombre o desaparecen tan rápido como aparecen. Todos somos testigos de esto.</p>
+    <br>
+  <p>Para que un negocio sea própero se deben realizar procesos y aplicar estrategias que sólo las pueden llevar a cabo profesionales experimentados que hacen lo que deben hacer para facilitar la tomas de decisiones acertadas para el negocio.</p>
+    <br>
+    <p>Nuestra misión es simple: aportar dedicación y experiencia para su negocio se consolide y sea cada vez más retable. Nos integramos como su Partner Estratégico, asegurando que cada actividad se ejecute para aumentar la generación de valor.</p>    
+  <a href="https://wa.me/58e162499925" class="btn" style="width: auto; margin-top: 1.5rem; display: inline-block;">
+        <i class="fab fa-whatsapp"></i> Consúltanos por WhatsApp
       </a>
     </div>
   </section>
@@ -340,7 +328,7 @@
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-building"></i></div>
           <h3>Servicios Administrativos</h3>
-          <p>Gestión, adecuación, implementación y gestión de procesos administrativos y operativos para optimizar el funcionamiento y la eficiencia de su empresa.</p>
+          <p>Adecuación, implementación y  gestión  de procesos administrativos y operativos para optimizar la eficiencia de su empresa.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-chart-line"></i></div>
@@ -350,47 +338,32 @@
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
           <h3>Servicios Contables</h3>
-          <p>Profesionales se encargan de la contabilidad de forma dedicada, declaraciones fiscales y cumplimento normativo mientras que la empresa se enfoque en su actividad comercial.</p>
+          <p>Contabilidad precisa, declaraciones fiscales y cumplimiento normativo.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-hand-holding-usd"></i></div>
           <h3>Servicios Financieros</h3>
-          <p>Colaboramos en la gestión del capital financiero para fomentar el crecimiento, mitigar riesgos y mejorar la eficiencia operativa. Apoyamos con flujo de caja, inversiones, carteras digitales, Payment as a Service y otros servicios.</p>
+          <p>Planificación financiera, flujo de caja y gestión de inversiones.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-search"></i></div>
           <h3>Auditorías</h3>
-          <p>Garantiza transparencia, eficiencia y el conocimiento de la realidad de la situación de la empresa; determina el cumplimiento normativas y los controles internos diseñados para prever riesgos; y aumenta la confianza de inversores.</p>
+          <p>Revisiones internas y externas para garantizar transparencia y eficiencia.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-comments"></i></div>
           <h3>Asesorías y Consultorías</h3>
-          <p>Orientación personalizada orientada a la optimización de procesos que influyen directamente en la eficiencia y productividad. Ofrece soluciones aumenta la rentabilidad y la obtención de beneficios.</p>
+          <p>Orientación personalizada para el crecimiento y mejora de su negocio.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-file-invoice"></i></div>
           <h3>Gestión de Proyectos</h3>
-          <p>Un proyecto es un conjunto de tareas que deben completarse dentro de un tiempo definido para lograr un conjunto específico de objetivos. Su gestión implica la planificación, ejecución, el seguimiento y control de todos sus procesos desde su inicio hasta su culminación.</p>
+          <p>Planificación y ejecución de proyectos empresariales, sociales y humanitarios.</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-user-tie"></i></div>
           <h3>Asesoría para Emprendedores y Personas</h3>
-          <p>Ofrecemos apoyo en diversas áreas a través de consultorías y programas de mentorías para determinar la factibilidad de inversiones, elaborar planes de negocios, la obtención de financiamiento y cumplir con regulaciones.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
-          <h3>Adiestramiento y Capacitación</h3>
-          <p>Programas especializados para el desarrollo de habilidades técnicas y blandas en equipos de trabajo, alineados a los objetivos estratégicos de su organización.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-calculator"></i></div>
-          <h3>Administración de Nóminas</h3>
-          <p>Gestión integral y precisa de nóminas, cumpliendo con normativas laborales y fiscales, optimizando tiempos y reduciendo errores en el cálculo de salarios y beneficios.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
-          <h3>Investigación de Mercado</h3>
-          <p>Estudios personalizados para comprender tendencias, comportamiento del consumidor y dinámicas competitivas, facilitando decisiones informadas y estrategias efectivas.</p>
+          <p>Formalización de negocios, estructura legal y tributaria, planificación financiera, entre otros.</p>
         </div>
       </div>
     </div>
@@ -415,42 +388,49 @@
             <a href="https://wa.me/584162499925" target="_blank">+58 416-2499925</a>
           </div>
           <div class="qr-code">
-            <img src="santos_vallenilla.@administrador.santosrvh_qr.instagram.png" alt="Escanea para contactar por WhatsApp">
+            <img src="santos_vallenilla.@administrador.santosrvh_qr.jpeg" alt="Escanea para contactar por WhatsApp">
           </div>
           <a href="https://wa.me/584162499925" class="btn">
-            <i class="fab fa-whatsapp"></i> Consúltenos por WhatsApp
+            <i class="fab fa-whatsapp"></i> Escribenos por WhatsApp
           </a>
         </div>
 
-        <div class="contact-form">
-          <h3>Haga su consulta aquí</h3>
-          <form id="cotizacionForm" action="https://getform.io/f/apjzkeza" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="telefono">Teléfono (opcional)</label>
-              <input type="tel" id="telefono" name="telefono">
-            </div>
-            <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
-            </div>
-            <button type="submit" class="btn">Enviar</button>
-          </form>
+<div class="contact-form">
+    <h3>Haga su consulta aquí</h3>
+    <form id="cotizacionForm" action="https://getform.io/f/apjzkeza" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
         </div>
-      </div>
-    </div>
-  </section>  
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</div>
+</div>
+</div>
+</section>  
+    
+  <foot>
+    <p>Llegar es fácil, lo complicado es mantenerse.</p>
+    <p>&copy;Este sitio fue creado por Santos Vallenilla. Todos los derechos reservados. Caracas, Venezuela. 2025</p>
+  </foot>
 
-  <footer>
-    <p>Llegar es fácil, lo difícil es mantenerse</p>
-    <p>&copy;Sitio en construcción. Creado por Santos Vallenilla. Todos los derechos reservados. Caracas, Venezuela. Octubre 2025</p>
-  </footer>
+<script>
+document.getElementById('cotizacionForm').addEventListener('submit', function(e) {
+    alert('Analizaremos tu consulta y le daremos respuesta lo más pronto posible.');
+    this.reset();
+});
+</script>
 </body>
 </html>
